@@ -1,0 +1,26 @@
+{
+  "name": "flashair2gyazo",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "exif2": "0.0.1",
+    "gyazo-api": "^0.3.0",
+    "koa": "^1.2.0",
+    "moment": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pastak/flashair2gyazo.git"
+  },
+  "author": "pastak <pasta0915@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pastak/flashair2gyazo/issues"
+  },
+  "homepage": "https://github.com/pastak/flashair2gyazo#readme"
+}
