@@ -19,7 +19,7 @@ app.use(function *() {
   const image = this.request.body.files.imagedata
   const filepath = image.path
   const data = yield getExif(filepath)
-  const dateTimeOriginal = data.exif.dateTimeOriginal
+  const dateTimeOriginal = data.exif && data.exif.dateTimeOriginal
   const unixtime = dateTimeOriginal ? moment(dateTimeOriginal).unix() : null
   const response = yield GyazoClient.upload(filepath, {
     created_at: unixtime,
